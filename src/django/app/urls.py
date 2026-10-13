@@ -21,5 +21,5 @@ from aulas import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('salones/', include(urls)),
+    path('aulas/', include(urls)),
 ]

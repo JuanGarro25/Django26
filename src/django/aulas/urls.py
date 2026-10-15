@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import nuevohello, bye, edad, primer_plantilla, segunda_plantilla, tercer_plantilla, cuarta_plantilla
+from .views import nuevohello, bye, edad, primer_plantilla, segunda_plantilla, tercer_plantilla, cuarta_plantilla, crear_musico, crear_album
 
 urlpatterns = [
     path('hello', nuevohello),
@@ -10,4 +10,6 @@ urlpatterns = [
     path('plantilla2', segunda_plantilla),
     path('plantilla3', tercer_plantilla),
     path('plantilla4', cuarta_plantilla),
+    path('crearmusico/<nombre>/<apellido>/<instrumento>', crear_musico),
+    path('crearalbum/<nombre>/<int:estrellas>/<int:artista_id>', crear_album),
 ]

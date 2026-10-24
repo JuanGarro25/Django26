@@ -2,3 +2,5 @@
 .DS_Store
 .code
 *.pyc
+*.sqlite3
+.env
